@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/Background"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+
+        android:id="@+id/textView"
+        android:layout_width="422dp"
+        android:layout_height="159dp"
+        android:layout_marginTop="56dp"
+        android:fontFamily="@font/montserratregular"
+        android:gravity="center"
+        android:text="Приветствуем вас в GiftChanger!"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.087" />
+
+    <TextView
+        android:id="@+id/textview"
+        android:layout_width="414dp"
+        android:layout_height="39dp"
+        android:fontFamily="@font/montserratregular"
+        android:gravity="center"
+        android:text="Давайте начнём!"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <ImageButton
+        android:id="@+id/button"
+        android:layout_width="207dp"
+        android:layout_height="50dp"
+        android:background="@drawable/shape"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/shape"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="206dp"
+        android:layout_height="49dp"
+        android:layout_marginBottom="340dp"
+        android:fontFamily="@font/montserratregular"
+        android:gravity="center"
+        android:text="Выбрать подарок"
+        android:textColor="#2B1616"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
