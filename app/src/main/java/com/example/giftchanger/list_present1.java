@@ -7,15 +7,14 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 
-public class MainActivity extends AppCompatActivity {
-        private ImageButton imageButton;
+public class list_present1 extends AppCompatActivity {
+    private ImageButton backInCategories;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        imageButton = findViewById(R.id.button);
-        }
-
+        setContentView(R.layout.activity_list_present1);
+        backInCategories = findViewById(R.id.button);
+    }
     private View.OnClickListener listener=new View.OnClickListener() {
         @Override
         public void onClick(View v) {

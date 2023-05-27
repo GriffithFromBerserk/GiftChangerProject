@@ -7,19 +7,18 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 
-public class MainActivity extends AppCompatActivity {
-        private ImageButton imageButton;
+public class list_categoriesOfPeople extends AppCompatActivity {
+   private ImageButton child_1_3;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        imageButton = findViewById(R.id.button);
-        }
-
+        setContentView(R.layout.activity_list_categories_of_people);
+        child_1_3 = findViewById(R.id.button);
+    }
     private View.OnClickListener listener=new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            Intent intent=new Intent(getApplicationContext(),list_categoriesOfPeople.class);
+            Intent intent=new Intent(getApplicationContext(),list_present1.class);
             startActivity(intent);
         }
     };
