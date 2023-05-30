@@ -12,7 +12,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.List;
 
-public class presentAdapter extends RecyclerView.Adapter<presentAdapter.ViewHolder> {
+public class presentAdapter extends RecyclerView.Adapter<presentAdapter.ViewHolder> { //адаптер из 3 дз все по шаблону ничего нового
     private final LayoutInflater inflater;
     private final List<Present> presents;
 
@@ -43,7 +43,7 @@ public class presentAdapter extends RecyclerView.Adapter<presentAdapter.ViewHold
         return presents.size();
     }
 
-    public static class ViewHolder extends RecyclerView.ViewHolder {
+    public static class ViewHolder extends RecyclerView.ViewHolder {//вложенный класс (вроде)
         final ImageView presentView;
         final TextView nameView, priceView, fameView;
 

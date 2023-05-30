@@ -1,6 +1,6 @@
 package com.example.giftchanger;
 
-public class Present {
+public class Present {  //просто класс
     private String name;
     private String price;
     private String fame;
