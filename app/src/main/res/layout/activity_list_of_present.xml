@@ -35,6 +35,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
         android:layout_width="293dp"
         android:layout_height="379dp"
         android:layout_marginBottom="100dp"
@@ -43,7 +44,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageButton
-        android:id="@+id/button"
+        android:id="@+id/button2"
         android:layout_width="207dp"
         android:layout_height="50dp"
         android:background="@drawable/shape"
@@ -59,15 +60,15 @@
         android:id="@+id/textView17"
         android:layout_width="115dp"
         android:layout_height="36dp"
-        android:layout_marginBottom="56dp"
+        android:fontFamily="@font/montserratregular"
         android:gravity="center_horizontal|center_vertical"
         android:text="Назад"
         android:textColor="#2B1616"
         android:textSize="16sp"
-        android:fontFamily="@font/montserratregular"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.469"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintBottom_toBottomOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="@+id/button"
+        app:layout_constraintStart_toStartOf="@+id/button"
+        app:layout_constraintTop_toBottomOf="@+id/recyclerView"
+        app:layout_constraintVertical_bias="0.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
