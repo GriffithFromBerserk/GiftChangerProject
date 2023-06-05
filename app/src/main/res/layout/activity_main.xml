@@ -49,9 +49,9 @@
 
     <TextView
         android:id="@+id/textView1"
-        android:layout_width="206dp"
-        android:layout_height="49dp"
-        android:layout_marginBottom="340dp"
+        android:layout_width="211dp"
+        android:layout_height="33dp"
+        android:layout_marginBottom="412dp"
         android:fontFamily="@font/montserratregular"
         android:gravity="center"
         android:text="Выбрать подарок"
@@ -59,7 +59,7 @@
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintHorizontal_bias="0.455"
         app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

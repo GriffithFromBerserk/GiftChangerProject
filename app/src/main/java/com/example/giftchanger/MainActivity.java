@@ -7,21 +7,20 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 
-public class MainActivity extends AppCompatActivity {
-        private ImageButton imageButton;
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+    private ImageButton imageButton;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         imageButton = findViewById(R.id.button1);
-
-        }
-    private View.OnClickListener listener=new View.OnClickListener() {
-        @Override
-        public void onClick(View v) {
-            Intent intent=new Intent(getApplicationContext(),Second.class);//переход во вторую активность
-            startActivity(intent);
-        }
-    };
+imageButton.setOnClickListener(this);
     }
 
+    @Override
+    public void onClick(View view) {
+        Intent intent = new Intent(this, Second.class);
+        startActivity(intent);
+    }
+}

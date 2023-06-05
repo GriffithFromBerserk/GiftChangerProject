@@ -35,7 +35,7 @@ public class presentAdapter extends RecyclerView.Adapter<presentAdapter.ViewHold
         holder.presentView.setImageResource(present.getPresentResource());
         holder.nameView.setText(present.getName());
         holder.priceView.setText(present.getPrice());
-        holder.fameView.setText(present.getFame());
+        holder.fameView.setText(present.getGender());
     }
 
     @Override
