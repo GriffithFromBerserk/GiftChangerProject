@@ -1,20 +1,19 @@
 package com.example.giftchanger;
 
-public class Present {  //класс сущности подарка с конструкторами, геттерами и сеттерами
-    public String getName() {
-        return name;
+import java.io.Serializable;
+
+public class Present implements Serializable {  //класс сущности подарка с конструкторами, геттерами и сеттерами
+
+    private String age;
+    private String gender;
+    private String price;
+
+    public String getAge() {
+        return age;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getPrice() {
-        return price;
-    }
-
-    public void setPrice(String price) {
-        this.price = price;
+    public void setAge(String age) {
+        this.age = age;
     }
 
     public String getGender() {
@@ -25,23 +24,17 @@ public class Present {  //класс сущности подарка с конс
         this.gender = gender;
     }
 
-    public int getPresentResource() {
-        return presentResource;
+    public String getPrice() {
+        return price;
     }
 
-    public void setPresentResource(int presentResource) {
-        this.presentResource = presentResource;
-    }
-
-    private String name;
-    private String price;
-    private String gender;
-    private int presentResource;
-
-    public Present(String name, String price, String gender, int presentResource) {
-        this.name = name;
+    public void setPrice(String price) {
         this.price = price;
+    }
+
+    public Present(String age, String gender, String price) {
+        this.age = age;
         this.gender = gender;
-        this.presentResource = presentResource;
+        this.price = price;
     }
 }

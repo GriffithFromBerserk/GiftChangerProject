@@ -27,5 +27,7 @@ public class Second extends AppCompatActivity {
         String CASHstr = cash.getText().toString();
 
         Intent intentSec = new Intent(getApplicationContext(), listOfPresent.class);
+        Present present = new Present(AGEstr, GENDERstr, CASHstr);
+        intentSec.putExtra("argument", present);
     }
 }
